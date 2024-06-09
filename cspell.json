@@ -1,0 +1,17 @@
+{
+   "ignorePaths": ["node_modules", "build", "dist", "**/*.d.ts"],
+   "language": "en",
+   "words": [
+      "certificatemanager",
+      "chrisebert",
+      "customresources",
+      "ebertlabs",
+      "Eberts",
+      "Imdsv",
+      "loglevel",
+      "Opensearch",
+      "opensearchservice",
+      "Parens",
+      "stepfunctions"
+   ]
+}
