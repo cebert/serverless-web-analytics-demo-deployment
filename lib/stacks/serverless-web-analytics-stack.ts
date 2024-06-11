@@ -59,7 +59,7 @@ export class ServerlessWebAnalyticsStack extends cdk.Stack {
             `https://${props.domain}`,
          ],
          sites: ['chrisebert.net', 'ebertlabs.com', 'aws-midwest-community-day', props.domain],
-         firehoseBufferInterval: 500,
+         firehoseBufferInterval: 120,
          domain: {
             name: props.domain,
             usEast1Certificate: props.acmCertificateArn,
