@@ -72,6 +72,15 @@ export class ServerlessWebAnalyticsStack extends cdk.Stack {
          observability: {
             dashboard: true,
             loglevel: 'INFO',
+            alarms: {
+               alarmTopic,
+               alarmTypes: {
+                  // Adds a hard and soft alarm to both Lambda functions;
+                  lambda: true,
+                  // Adds a throttle and s3 delivery failure alarms for both Firehoses.
+                  firehose: true
+               }
+            }
          },
          rateLimit: {
             ingestLambdaConcurrency: 100,
