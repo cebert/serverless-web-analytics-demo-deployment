@@ -75,9 +75,9 @@ export class ServerlessWebAnalyticsStack extends cdk.Stack {
             alarms: {
                alarmTopic,
                alarmTypes: {
-                  // Adds a hard and soft alarm to both Lambda functions;
+                  // Adds a hard and soft alarm to both Lambda functions
                   lambda: true,
-                  // Adds a throttle and s3 delivery failure alarms for both Firehoses.
+                  // Adds a throttle and s3 delivery failure alarms for both Firehoses
                   firehose: true
                }
             }
